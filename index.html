@@ -20,12 +20,12 @@
       body {
         font-family: "Amita", cursive;
         margin: 2em;
-        background-color: #4340E6;
-        color: #40C2E6;
+        background-color: #542EE6;
+        color: #40C7E6;
         font-size: 1.2em;
       }
       h1 {
-        color: #40C2E6;
+        color: #40C7E6;
       }
       #poem > div {
         height: 1.2em;
@@ -43,9 +43,9 @@
     <div id="poem"></div>
     <script>
       // set up the lists of words
-      const subjects = "you,I,we,they".split(","),
-        verbs = "run,walk,speak,drift,talk,whisper".split(","),
-        objects = "me,you,her,him,them".split(",");
+      const subjects = "leaf,feather,blossom,petal,gumnut".split(","),
+        verbs = "scatter,float,sink,hold,hum,cluster".split(","),
+        objects = "cloud,rain,wind,sun,moon".split(",");
       // set up the counter
       let counter = 0;
 
@@ -87,9 +87,9 @@
       // implement the rules of the poem
       function processPoem() {
         counter++;
-        if (counter % 5 === 0) {
+        if (counter % 3 === 0) {
           addBlankLine();
-        } else if (counter % 5 === 2 || counter % 5 === 4) {
+        } else if (counter % 3 === 2 || counter % 3 === 2) {
           // if the second or fourth line add the line with an indent
           addLine(true);
         } else {
